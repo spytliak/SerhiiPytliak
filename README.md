@@ -1,7 +1,7 @@
 #### for  "DevOps GL BaseCamp"
 
 The simple single-line web servers:
-
+```
 bash
 $ while true ; do echo -e "HTTP/1.1 200 OK\n\n'Hello DevOps GL BaseCamp'\n$(date)" | nc -l -k -p 8080 -q 1; done
 
@@ -19,7 +19,7 @@ $ php -S localhost:8080 -t .
 
 Ruby
 $ ruby -run -e httpd . -p 8080
-
+```
 
 #### Example with bash in docker 
 ```
@@ -29,6 +29,7 @@ root@ser:~/GLDevOpsBaseCam# docker run -it -p 8000:8888 -d spytliak/singlelinewe
 root@ser:~/GLDevOpsBaseCam# curl 127.0.0.1:8000
 'Hello DevOps GL BaseCamp'
 Sun Apr 18 15:18:23 UTC 2021
+```
 
 #### Example with python in docker 
 ```
@@ -79,3 +80,4 @@ root@ser:~/GLDevOpsBaseCam# curl 127.0.0.1:8000
 <hr>
 </body>
 </html>
+```
